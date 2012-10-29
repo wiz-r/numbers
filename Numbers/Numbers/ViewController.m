@@ -6,9 +6,13 @@
 //  Copyright (c) 2012年 wiz-r. All rights reserved.
 //
 
+#import "GameViewController.h"
 #import "ViewController.h"
 
 @interface ViewController ()
+- (IBAction)playButtonTouched:(id)sender;
+- (IBAction)leaderboardButtonTouched:(id)sender;
+- (IBAction)optionButtonTouched:(id)sender;
 
 @end
 
@@ -26,4 +30,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)playButtonTouched:(id)sender
+{
+  UIViewController* viewController = [[GameViewController alloc] init];
+  [self presentViewController:viewController animated:NO completion:nil];
+  [viewController release];
+}
+
+- (IBAction)leaderboardButtonTouched:(id)sender {
+}
+
+- (IBAction)optionButtonTouched:(id)sender {
+}
 @end
