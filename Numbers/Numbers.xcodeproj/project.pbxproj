@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B108D6D16400C2500F7AF0D /* numbers_logo_png24.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B108D6C16400C2500F7AF0D /* numbers_logo_png24.png */; };
 		9B99425F163EC009001CAECC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B99425E163EC009001CAECC /* UIKit.framework */; };
 		9B994261163EC009001CAECC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B994260163EC009001CAECC /* Foundation.framework */; };
 		9B994263163EC009001CAECC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B994262163EC009001CAECC /* CoreGraphics.framework */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B108D6C16400C2500F7AF0D /* numbers_logo_png24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = numbers_logo_png24.png; path = ../../images/numbers_logo_png24.png; sourceTree = "<group>"; };
 		9B99425A163EC009001CAECC /* Numbers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Numbers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B99425E163EC009001CAECC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9B994260163EC009001CAECC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -104,6 +106,7 @@
 		9B994265163EC009001CAECC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9B108D6C16400C2500F7AF0D /* numbers_logo_png24.png */,
 				9B994266163EC009001CAECC /* Numbers-Info.plist */,
 				9B994267163EC009001CAECC /* InfoPlist.strings */,
 				9B99426A163EC009001CAECC /* main.m */,
@@ -172,6 +175,7 @@
 				9B994275163EC009001CAECC /* Default-568h@2x.png in Resources */,
 				9B99427B163EC009001CAECC /* ViewController.xib in Resources */,
 				9B994292163EC4FF001CAECC /* GameView.xib in Resources */,
+				9B108D6D16400C2500F7AF0D /* numbers_logo_png24.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
