@@ -27,7 +27,7 @@
     srand(time(NULL));
     
     for (int i = 0; i < 25; i++) {
-      int change = i + (rand() / 25 - i);
+      int change = i + (rand() % 25 - i);
       
       NSNumber* n = [self.numbers objectAtIndex:i];
       [self.numbers replaceObjectAtIndex:i
