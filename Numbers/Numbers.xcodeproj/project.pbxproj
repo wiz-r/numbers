@@ -80,8 +80,6 @@
 		9B99424F163EC009001CAECC = {
 			isa = PBXGroup;
 			children = (
-				650B0396164164220015595F /* SystemConfiguration.framework */,
-				650B0394164164160015595F /* CFNetwork.framework */,
 				650B038F164162B50015595F /* Flurry */,
 				9B994264163EC009001CAECC /* Numbers */,
 				9B99425D163EC009001CAECC /* Frameworks */,
@@ -100,6 +98,8 @@
 		9B99425D163EC009001CAECC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				650B0396164164220015595F /* SystemConfiguration.framework */,
+				650B0394164164160015595F /* CFNetwork.framework */,
 				9B99425E163EC009001CAECC /* UIKit.framework */,
 				9B994260163EC009001CAECC /* Foundation.framework */,
 				9B994262163EC009001CAECC /* CoreGraphics.framework */,

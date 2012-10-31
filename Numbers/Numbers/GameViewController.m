@@ -11,6 +11,7 @@
 
 @interface Numbers : NSObject
 @property (retain, nonatomic) NSMutableArray* numbers;
+@property (assign, nonatomic) NSInteger targetNumber;
 @end
 
 @implementation Numbers
@@ -35,6 +36,8 @@
       [self.numbers replaceObjectAtIndex:change
                               withObject:n];
     }
+    
+    self.targetNumber = 1;
   }
   return self;
 }
@@ -55,6 +58,10 @@
 @property (retain, nonatomic) NSDate* currentTime;
 
 @property (retain, nonatomic) Numbers* numbers;
+
+- (IBAction)numberButtonTapped:(id)sender;
+
+- (void)finishGame;
 
 @end
 
@@ -134,4 +141,36 @@
   [_numbers release];
   [super dealloc];
 }
+
+- (IBAction)numberButtonTapped:(id)sender
+{
+  NSLog(@"sender:%@", sender);
+
+  UIButton* button = (UIButton*)sender;
+  NSInteger tappedNumber = button.tag;
+  
+  if (self.numbers.targetNumber == tappedNumber) {
+    NSString* imageName = [NSString stringWithFormat:@"numbers_button_on_p_%02d.png", tappedNumber];
+    UIImage* image = [UIImage imageNamed:imageName];
+    [button setImage:image forState:UIControlStateNormal];
+    button.userInteractionEnabled = NO;
+    self.numbers.targetNumber = self.numbers.targetNumber + 1;
+    
+    if (tappedNumber == 25) {
+      [self finishGame];
+    }
+  }
+}
+
+- (void)finishGame
+{
+  [[[[UIAlertView alloc]
+     initWithTitle:@"Congraturation!"
+     message:@"やったね"
+     delegate:nil
+     cancelButtonTitle:nil
+     otherButtonTitles:@"OK",
+     nil] autorelease] show];
+}
+
 @end
