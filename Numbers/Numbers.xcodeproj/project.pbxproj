@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		650B0392164162B60015595F /* libFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 650B0391164162B60015595F /* libFlurry.a */; };
+		650B0397164164220015595F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 650B0396164164220015595F /* SystemConfiguration.framework */; };
 		9B108D6D16400C2500F7AF0D /* numbers_logo_png24.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B108D6C16400C2500F7AF0D /* numbers_logo_png24.png */; };
 		9B99425F163EC009001CAECC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B99425E163EC009001CAECC /* UIKit.framework */; };
 		9B994261163EC009001CAECC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B994260163EC009001CAECC /* Foundation.framework */; };
@@ -24,6 +26,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		650B0390164162B60015595F /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
+		650B0391164162B60015595F /* libFlurry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry.a; sourceTree = "<group>"; };
+		650B0394164164160015595F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		650B0396164164220015595F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		9B108D6C16400C2500F7AF0D /* numbers_logo_png24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = numbers_logo_png24.png; path = ../../images/numbers_logo_png24.png; sourceTree = "<group>"; };
 		9B99425A163EC009001CAECC /* Numbers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Numbers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B99425E163EC009001CAECC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -51,18 +57,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				650B0397164164220015595F /* SystemConfiguration.framework in Frameworks */,
 				9B99425F163EC009001CAECC /* UIKit.framework in Frameworks */,
 				9B994261163EC009001CAECC /* Foundation.framework in Frameworks */,
 				9B994263163EC009001CAECC /* CoreGraphics.framework in Frameworks */,
+				650B0392164162B60015595F /* libFlurry.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		650B038F164162B50015595F /* Flurry */ = {
+			isa = PBXGroup;
+			children = (
+				650B0390164162B60015595F /* Flurry.h */,
+				650B0391164162B60015595F /* libFlurry.a */,
+			);
+			path = Flurry;
+			sourceTree = "<group>";
+		};
 		9B99424F163EC009001CAECC = {
 			isa = PBXGroup;
 			children = (
+				650B0396164164220015595F /* SystemConfiguration.framework */,
+				650B0394164164160015595F /* CFNetwork.framework */,
+				650B038F164162B50015595F /* Flurry */,
 				9B994264163EC009001CAECC /* Numbers */,
 				9B99425D163EC009001CAECC /* Frameworks */,
 				9B99425B163EC009001CAECC /* Products */,
@@ -277,6 +297,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Numbers/Numbers-Prefix.pch";
 				INFOPLIST_FILE = "Numbers/Numbers-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Flurry\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -288,6 +312,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Numbers/Numbers-Prefix.pch";
 				INFOPLIST_FILE = "Numbers/Numbers-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Flurry\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
