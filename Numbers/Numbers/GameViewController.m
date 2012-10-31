@@ -6,6 +6,7 @@
 //  Copyright (c) 2012年 wiz-r. All rights reserved.
 //
 
+#import <AVFoundation/AVFoundation.h>
 #import "GameViewController.h"
 
 
@@ -45,7 +46,7 @@
 
 
 
-@interface GameViewController ()
+@interface GameViewController () <AVAudioSessionDelegate>
 @property (retain, nonatomic) IBOutlet UIView *countDownView;
 @property (retain, nonatomic) IBOutlet UILabel *countDownLabel;
 @property (retain, nonatomic) IBOutletCollection(UIButton) NSArray *numberButtons;
@@ -58,6 +59,8 @@
 @property (retain, nonatomic) NSDate* currentTime;
 
 @property (retain, nonatomic) Numbers* numbers;
+
+@property (retain, nonatomic) AVAudioPlayer* player;
 
 - (IBAction)numberButtonTapped:(id)sender;
 
@@ -123,6 +126,15 @@
 {
   [super viewDidLoad];
 	// Do any additional setup after loading the view.
+  
+  AVAudioSession *audioSession = [AVAudioSession sharedInstance];
+  [audioSession setCategory:AVAudioSessionCategoryAmbient error:nil];
+  [audioSession setActive:YES error:nil];
+  
+  NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"tap" ofType:@"wav"];
+  NSURL *file = [[[NSURL alloc] initFileURLWithPath:soundPath] autorelease];
+  self.player = [[[AVAudioPlayer alloc] initWithContentsOfURL:file error:nil] autorelease];
+  [self.player prepareToPlay];
 }
 
 - (void)didReceiveMemoryWarning
@@ -139,6 +151,7 @@
   [_currentTimeLabel release];
   [_containerView release];
   [_numbers release];
+  [_player release];
   [super dealloc];
 }
 
@@ -148,6 +161,8 @@
 
   UIButton* button = (UIButton*)sender;
   NSInteger tappedNumber = button.tag;
+  
+  [self.player play];
   
   if (self.numbers.targetNumber == tappedNumber) {
     NSString* imageName = [NSString stringWithFormat:@"numbers_button_on_p_%02d.png", tappedNumber];

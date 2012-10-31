@@ -261,6 +261,13 @@
 		9B10922B1641674E00F7AF0D /* numbers_button_on_y_24.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B1091301641674E00F7AF0D /* numbers_button_on_y_24.png */; };
 		9B10922C1641674E00F7AF0D /* numbers_button_on_y_25.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B1091311641674E00F7AF0D /* numbers_button_on_y_25.png */; };
 		9B10922D1641674E00F7AF0D /* numbers_logo_png24.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B1091321641674E00F7AF0D /* numbers_logo_png24.png */; };
+		9B109235164169D100F7AF0D /* tap.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9B109234164169D100F7AF0D /* tap.wav */; };
+		9B10924016416A2200F7AF0D /* 00_count_down1-3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9B10923B16416A2200F7AF0D /* 00_count_down1-3.mp3 */; };
+		9B10924116416A2200F7AF0D /* 01_start.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9B10923C16416A2200F7AF0D /* 01_start.mp3 */; };
+		9B10924216416A2200F7AF0D /* 02_seikai.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9B10923D16416A2200F7AF0D /* 02_seikai.mp3 */; };
+		9B10924316416A2200F7AF0D /* 03_hazure.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9B10923E16416A2200F7AF0D /* 03_hazure.mp3 */; };
+		9B10924416416A2200F7AF0D /* select08.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9B10923F16416A2200F7AF0D /* select08.mp3 */; };
+		9B10924716416A8C00F7AF0D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B10924616416A8C00F7AF0D /* AVFoundation.framework */; };
 		9B99425F163EC009001CAECC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B99425E163EC009001CAECC /* UIKit.framework */; };
 		9B994261163EC009001CAECC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B994260163EC009001CAECC /* Foundation.framework */; };
 		9B994263163EC009001CAECC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B994262163EC009001CAECC /* CoreGraphics.framework */; };
@@ -533,6 +540,13 @@
 		9B1091301641674E00F7AF0D /* numbers_button_on_y_24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = numbers_button_on_y_24.png; sourceTree = "<group>"; };
 		9B1091311641674E00F7AF0D /* numbers_button_on_y_25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = numbers_button_on_y_25.png; sourceTree = "<group>"; };
 		9B1091321641674E00F7AF0D /* numbers_logo_png24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = numbers_logo_png24.png; sourceTree = "<group>"; };
+		9B109234164169D100F7AF0D /* tap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tap.wav; sourceTree = "<group>"; };
+		9B10923B16416A2200F7AF0D /* 00_count_down1-3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "00_count_down1-3.mp3"; sourceTree = "<group>"; };
+		9B10923C16416A2200F7AF0D /* 01_start.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 01_start.mp3; sourceTree = "<group>"; };
+		9B10923D16416A2200F7AF0D /* 02_seikai.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 02_seikai.mp3; sourceTree = "<group>"; };
+		9B10923E16416A2200F7AF0D /* 03_hazure.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 03_hazure.mp3; sourceTree = "<group>"; };
+		9B10923F16416A2200F7AF0D /* select08.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = select08.mp3; sourceTree = "<group>"; };
+		9B10924616416A8C00F7AF0D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		9B99425A163EC009001CAECC /* Numbers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Numbers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B99425E163EC009001CAECC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9B994260163EC009001CAECC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -559,6 +573,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B10924716416A8C00F7AF0D /* AVFoundation.framework in Frameworks */,
 				650B0397164164220015595F /* SystemConfiguration.framework in Frameworks */,
 				9B99425F163EC009001CAECC /* UIKit.framework in Frameworks */,
 				9B994261163EC009001CAECC /* Foundation.framework in Frameworks */,
@@ -846,6 +861,20 @@
 			path = button;
 			sourceTree = "<group>";
 		};
+		9B109233164169D100F7AF0D /* sound */ = {
+			isa = PBXGroup;
+			children = (
+				9B10923B16416A2200F7AF0D /* 00_count_down1-3.mp3 */,
+				9B10923C16416A2200F7AF0D /* 01_start.mp3 */,
+				9B10923D16416A2200F7AF0D /* 02_seikai.mp3 */,
+				9B10923E16416A2200F7AF0D /* 03_hazure.mp3 */,
+				9B10923F16416A2200F7AF0D /* select08.mp3 */,
+				9B109234164169D100F7AF0D /* tap.wav */,
+			);
+			name = sound;
+			path = ../../sound;
+			sourceTree = "<group>";
+		};
 		9B99424F163EC009001CAECC = {
 			isa = PBXGroup;
 			children = (
@@ -867,6 +896,7 @@
 		9B99425D163EC009001CAECC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9B10924616416A8C00F7AF0D /* AVFoundation.framework */,
 				650B0396164164220015595F /* SystemConfiguration.framework */,
 				650B0394164164160015595F /* CFNetwork.framework */,
 				9B99425E163EC009001CAECC /* UIKit.framework */,
@@ -896,6 +926,7 @@
 			isa = PBXGroup;
 			children = (
 				9B1090361641674E00F7AF0D /* images */,
+				9B109233164169D100F7AF0D /* sound */,
 				9B108D6C16400C2500F7AF0D /* numbers_logo_png24.png */,
 				9B994266163EC009001CAECC /* Numbers-Info.plist */,
 				9B994267163EC009001CAECC /* InfoPlist.strings */,
@@ -1217,6 +1248,12 @@
 				9B10922B1641674E00F7AF0D /* numbers_button_on_y_24.png in Resources */,
 				9B10922C1641674E00F7AF0D /* numbers_button_on_y_25.png in Resources */,
 				9B10922D1641674E00F7AF0D /* numbers_logo_png24.png in Resources */,
+				9B109235164169D100F7AF0D /* tap.wav in Resources */,
+				9B10924016416A2200F7AF0D /* 00_count_down1-3.mp3 in Resources */,
+				9B10924116416A2200F7AF0D /* 01_start.mp3 in Resources */,
+				9B10924216416A2200F7AF0D /* 02_seikai.mp3 in Resources */,
+				9B10924316416A2200F7AF0D /* 03_hazure.mp3 in Resources */,
+				9B10924416416A2200F7AF0D /* select08.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
