@@ -62,6 +62,8 @@
 
 @property (retain, nonatomic) AVAudioPlayer* player;
 
+@property (assign, nonatomic) BOOL finishedGame;
+
 - (IBAction)numberButtonTapped:(id)sender;
 
 - (void)finishGame;
@@ -90,6 +92,8 @@
 
 - (void)countUpTimer
 {
+  if (self.finishedGame) return;
+  
   self.currentTime = [NSDate date];
   NSTimeInterval diff = [self.currentTime timeIntervalSinceDate:self.startTime];
   self.currentTimeLabel.text = [NSString stringWithFormat:@"%03.3f", diff];
@@ -109,6 +113,9 @@
 {
   [super viewWillAppear:animated];
 
+  // update status
+  self.finishedGame = NO;
+  
   // setup count down view
   self.count = 3;
   [self.view addSubview:self.countDownView];
@@ -143,12 +150,6 @@
   [self.player prepareToPlay];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 - (void)dealloc {
   [_countDownView release];
   [_numberButtons release];
@@ -179,6 +180,8 @@
     
     if (tappedNumber == 25) {
       [self finishGame];
+    } else {
+      self.currentNumberLabel.text = [NSString stringWithFormat:@"> %d", self.numbers.targetNumber];
     }
   }
 }
@@ -186,12 +189,14 @@
 - (void)finishGame
 {
   [[[[UIAlertView alloc]
-     initWithTitle:@"Congraturation!"
+     initWithTitle:@"Congratulation!"
      message:@"やったね"
      delegate:nil
      cancelButtonTitle:nil
      otherButtonTitles:@"OK",
      nil] autorelease] show];
+  
+  self.finishedGame = YES;
 }
 
 @end
