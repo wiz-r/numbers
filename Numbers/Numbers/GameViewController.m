@@ -117,8 +117,14 @@
   // setup game model
   self.numbers = [[[Numbers alloc] init] autorelease];
 
-  for (UIButton* button in self.numberButtons) {
-    
+  for (NSUInteger i = 0; i < 25; i++) {
+    UIButton* button = [self.numberButtons objectAtIndex:i];
+    NSNumber* shuffledNumber = [self.numbers.numbers objectAtIndex:i];
+    NSInteger n = [shuffledNumber integerValue];
+    button.tag = n;
+    NSString* imageName = [NSString stringWithFormat:@"numbers_button_off_p_%02d.png", n];
+    UIImage* image = [UIImage imageNamed:imageName];
+    [button setImage:image forState:UIControlStateNormal];
   }
 }
 
