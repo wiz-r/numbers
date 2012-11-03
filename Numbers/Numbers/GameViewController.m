@@ -16,24 +16,20 @@
 @property (retain, nonatomic) IBOutlet UILabel* currentNumberLabel;
 @property (retain, nonatomic) IBOutlet UILabel* currentTimeLabel;
 @property (retain, nonatomic) IBOutlet UIView* containerView;
-@property (retain, nonatomic) NSDate* startTime;
-@property (retain, nonatomic) NSDate* currentTime;
 @property (retain, nonatomic) Numbers* numbers;
 @property (retain, nonatomic) AVAudioPlayer* player;
-@property (assign, nonatomic) BOOL finishedGame;
 - (IBAction)numberButtonTapped:(id)sender;
 - (void)finishGame;
+- (void)updateLabelForNextNumber;
 @end
 
 @implementation GameViewController
 
 - (void)countUpTimer
 {
-  if (self.finishedGame) return;
+  if (self.numbers.finishedGame) return;
   
-  self.currentTime = [NSDate date];
-  NSTimeInterval diff = [self.currentTime timeIntervalSinceDate:self.startTime];
-  self.currentTimeLabel.text = [NSString stringWithFormat:@"%03.3f", diff];
+  self.currentTimeLabel.text = [NSString stringWithFormat:@"%03.3f", self.numbers.elapsedTime];
   [self performSelector:@selector(countUpTimer) withObject:nil afterDelay:0.01f];
 }
 
@@ -50,9 +46,6 @@
 {
   [super viewWillAppear:animated];
 
-  // update status
-  self.finishedGame = NO;
-  
   // setup game model
   self.numbers = [[[Numbers alloc] init] autorelease];
 
@@ -66,17 +59,6 @@
     [button setImage:image forState:UIControlStateNormal];
   }
 
-  // ゲーム開始タイマースタート
-  self.startTime = [NSDate date];
-  self.currentTime = [NSDate date];
-  [self countUpTimer];
-}
-
-- (void)viewDidLoad
-{
-  [super viewDidLoad];
-	// Do any additional setup after loading the view.
-  
   AVAudioSession *audioSession = [AVAudioSession sharedInstance];
   [audioSession setCategory:AVAudioSessionCategoryAmbient error:nil];
   [audioSession setActive:YES error:nil];
@@ -85,9 +67,19 @@
   NSURL *file = [[[NSURL alloc] initFileURLWithPath:soundPath] autorelease];
   self.player = [[[AVAudioPlayer alloc] initWithContentsOfURL:file error:nil] autorelease];
   [self.player prepareToPlay];
+  
+  [self updateLabelForNextNumber];
 }
 
-- (void)dealloc {
+- (void)viewDidAppear:(BOOL)animated
+{
+  [super viewDidAppear:animated];
+  [self.numbers start];
+  [self countUpTimer];
+}
+
+- (void)dealloc
+{
   [_numberButtons release];
   [_currentNumberLabel release];
   [_currentTimeLabel release];
@@ -111,9 +103,10 @@
     UIImage* image = [UIImage imageNamed:imageName];
     [button setImage:image forState:UIControlStateNormal];
     button.userInteractionEnabled = NO;
-    self.numbers.targetNumber = self.numbers.targetNumber + 1;
-    
-    if (tappedNumber == 25) {
+
+    [self.numbers next];
+
+    if (self.numbers.finishedGame) {
       [self finishGame];
     } else {
       self.currentNumberLabel.text = [NSString stringWithFormat:@"> %d", self.numbers.targetNumber];
@@ -130,8 +123,12 @@
      cancelButtonTitle:nil
      otherButtonTitles:@"OK",
      nil] autorelease] show];
-  
-  self.finishedGame = YES;
 }
+
+- (void)updateLabelForNextNumber
+{
+  self.currentNumberLabel.text = [NSString stringWithFormat:@"> %d", self.numbers.targetNumber];
+}
+
 
 @end

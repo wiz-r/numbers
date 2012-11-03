@@ -933,10 +933,10 @@
 				503A2BB616453A3400C987ED /* CountDownViewController.m */,
 				9B994288163EC484001CAECC /* GameViewController.h */,
 				9B994289163EC484001CAECC /* GameViewController.m */,
-				9B994276163EC009001CAECC /* ViewController.h */,
-				9B994277163EC009001CAECC /* ViewController.m */,
 				503A2BCD164540C400C987ED /* Numbers.h */,
 				503A2BCE164540C400C987ED /* Numbers.m */,
+				9B994276163EC009001CAECC /* ViewController.h */,
+				9B994277163EC009001CAECC /* ViewController.m */,
 			);
 			path = Numbers;
 			sourceTree = "<group>";

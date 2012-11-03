@@ -10,5 +10,11 @@
 
 @interface Numbers : NSObject
 @property (retain, nonatomic) NSMutableArray* numbers;
-@property (assign, nonatomic) NSInteger targetNumber;
+@property (assign, nonatomic, readonly) NSInteger targetNumber;
+@property (assign, nonatomic, readonly) NSTimeInterval elapsedTime;
+@property (assign, nonatomic, readonly) BOOL finishedGame;
+
+- (void)start;
+- (void)next;
+
 @end

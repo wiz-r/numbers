@@ -31,7 +31,10 @@
 
 @end
 
+
 @interface Numbers ()
+@property (retain, nonatomic) NSDate* startTime;
+@property (retain, nonatomic) NSDate* currentTime;
 @end
 
 @implementation Numbers
@@ -49,9 +52,32 @@
     
     [self.numbers shuffle];
     
-    self.targetNumber = 1;
+    _targetNumber = 1;
   }
   return self;
+}
+
+- (void)start
+{
+  self.startTime = [NSDate date];
+  self.currentTime = [NSDate date];
+}
+
+- (void)next
+{
+  _targetNumber = _targetNumber + 1;
+}
+
+- (NSTimeInterval)elapsedTime
+{
+  self.currentTime = [NSDate date];
+  NSTimeInterval diff = [self.currentTime timeIntervalSinceDate:self.startTime];
+  return diff;
+}
+
+- (BOOL)finishedGame
+{
+  return kNumbersMaxSize < self.targetNumber;
 }
 
 @end
