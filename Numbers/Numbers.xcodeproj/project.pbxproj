@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		503A2BB816453A3400C987ED /* CountDownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 503A2BB616453A3400C987ED /* CountDownViewController.m */; };
+		503A2BC916453B0C00C987ED /* CountDownViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 503A2BC116453B0C00C987ED /* CountDownViewController.xib */; };
+		503A2BCA16453B0C00C987ED /* GameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 503A2BC316453B0C00C987ED /* GameView.xib */; };
+		503A2BCB16453B0C00C987ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 503A2BC516453B0C00C987ED /* InfoPlist.strings */; };
+		503A2BCC16453B0C00C987ED /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 503A2BC716453B0C00C987ED /* ViewController.xib */; };
 		650B0392164162B60015595F /* libFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 650B0391164162B60015595F /* libFlurry.a */; };
 		650B0397164164220015595F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 650B0396164164220015595F /* SystemConfiguration.framework */; };
-		9B108D6D16400C2500F7AF0D /* numbers_logo_png24.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B108D6C16400C2500F7AF0D /* numbers_logo_png24.png */; };
 		9B1091331641674E00F7AF0D /* numbers_button_off_b_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B1090381641674E00F7AF0D /* numbers_button_off_b_01.png */; };
 		9B1091341641674E00F7AF0D /* numbers_button_off_b_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B1090391641674E00F7AF0D /* numbers_button_off_b_02.png */; };
 		9B1091351641674E00F7AF0D /* numbers_button_off_b_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B10903A1641674E00F7AF0D /* numbers_button_off_b_03.png */; };
@@ -271,24 +275,26 @@
 		9B99425F163EC009001CAECC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B99425E163EC009001CAECC /* UIKit.framework */; };
 		9B994261163EC009001CAECC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B994260163EC009001CAECC /* Foundation.framework */; };
 		9B994263163EC009001CAECC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B994262163EC009001CAECC /* CoreGraphics.framework */; };
-		9B994269163EC009001CAECC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B994267163EC009001CAECC /* InfoPlist.strings */; };
 		9B99426B163EC009001CAECC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B99426A163EC009001CAECC /* main.m */; };
 		9B99426F163EC009001CAECC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B99426E163EC009001CAECC /* AppDelegate.m */; };
 		9B994271163EC009001CAECC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B994270163EC009001CAECC /* Default.png */; };
 		9B994273163EC009001CAECC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B994272163EC009001CAECC /* Default@2x.png */; };
 		9B994275163EC009001CAECC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B994274163EC009001CAECC /* Default-568h@2x.png */; };
 		9B994278163EC009001CAECC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B994277163EC009001CAECC /* ViewController.m */; };
-		9B99427B163EC009001CAECC /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B994279163EC009001CAECC /* ViewController.xib */; };
 		9B99428A163EC484001CAECC /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B994289163EC484001CAECC /* GameViewController.m */; };
-		9B994292163EC4FF001CAECC /* GameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B994290163EC4FF001CAECC /* GameView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		503A2BB516453A3400C987ED /* CountDownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountDownViewController.h; sourceTree = "<group>"; };
+		503A2BB616453A3400C987ED /* CountDownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountDownViewController.m; sourceTree = "<group>"; };
+		503A2BC216453B0C00C987ED /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = CountDownViewController.xib; sourceTree = "<group>"; };
+		503A2BC416453B0C00C987ED /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = GameView.xib; sourceTree = "<group>"; };
+		503A2BC616453B0C00C987ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		503A2BC816453B0C00C987ED /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = ViewController.xib; sourceTree = "<group>"; };
 		650B0390164162B60015595F /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
 		650B0391164162B60015595F /* libFlurry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry.a; sourceTree = "<group>"; };
 		650B0394164164160015595F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		650B0396164164220015595F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		9B108D6C16400C2500F7AF0D /* numbers_logo_png24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = numbers_logo_png24.png; path = ../../images/numbers_logo_png24.png; sourceTree = "<group>"; };
 		9B1090381641674E00F7AF0D /* numbers_button_off_b_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = numbers_button_off_b_01.png; sourceTree = "<group>"; };
 		9B1090391641674E00F7AF0D /* numbers_button_off_b_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = numbers_button_off_b_02.png; sourceTree = "<group>"; };
 		9B10903A1641674E00F7AF0D /* numbers_button_off_b_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = numbers_button_off_b_03.png; sourceTree = "<group>"; };
@@ -552,7 +558,6 @@
 		9B994260163EC009001CAECC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9B994262163EC009001CAECC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		9B994266163EC009001CAECC /* Numbers-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Numbers-Info.plist"; sourceTree = "<group>"; };
-		9B994268163EC009001CAECC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9B99426A163EC009001CAECC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9B99426C163EC009001CAECC /* Numbers-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Numbers-Prefix.pch"; sourceTree = "<group>"; };
 		9B99426D163EC009001CAECC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -562,10 +567,8 @@
 		9B994274163EC009001CAECC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		9B994276163EC009001CAECC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9B994277163EC009001CAECC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		9B99427A163EC009001CAECC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		9B994288163EC484001CAECC /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		9B994289163EC484001CAECC /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
-		9B994291163EC4FF001CAECC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GameView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -585,6 +588,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		503A2BC016453B0C00C987ED /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				503A2BC116453B0C00C987ED /* CountDownViewController.xib */,
+				503A2BC316453B0C00C987ED /* GameView.xib */,
+				503A2BC516453B0C00C987ED /* InfoPlist.strings */,
+				503A2BC716453B0C00C987ED /* ViewController.xib */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
 		650B038F164162B50015595F /* Flurry */ = {
 			isa = PBXGroup;
 			children = (
@@ -879,9 +893,10 @@
 			isa = PBXGroup;
 			children = (
 				650B038F164162B50015595F /* Flurry */,
-				9B994264163EC009001CAECC /* Numbers */,
 				9B99425D163EC009001CAECC /* Frameworks */,
+				9B994264163EC009001CAECC /* Numbers */,
 				9B99425B163EC009001CAECC /* Products */,
+				9B994265163EC009001CAECC /* Supporting Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -911,13 +926,12 @@
 			children = (
 				9B99426D163EC009001CAECC /* AppDelegate.h */,
 				9B99426E163EC009001CAECC /* AppDelegate.m */,
-				9B994290163EC4FF001CAECC /* GameView.xib */,
+				503A2BB516453A3400C987ED /* CountDownViewController.h */,
+				503A2BB616453A3400C987ED /* CountDownViewController.m */,
 				9B994288163EC484001CAECC /* GameViewController.h */,
 				9B994289163EC484001CAECC /* GameViewController.m */,
-				9B994265163EC009001CAECC /* Supporting Files */,
 				9B994276163EC009001CAECC /* ViewController.h */,
 				9B994277163EC009001CAECC /* ViewController.m */,
-				9B994279163EC009001CAECC /* ViewController.xib */,
 			);
 			path = Numbers;
 			sourceTree = "<group>";
@@ -925,18 +939,18 @@
 		9B994265163EC009001CAECC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9B1090361641674E00F7AF0D /* images */,
-				9B109233164169D100F7AF0D /* sound */,
-				9B108D6C16400C2500F7AF0D /* numbers_logo_png24.png */,
-				9B994266163EC009001CAECC /* Numbers-Info.plist */,
-				9B994267163EC009001CAECC /* InfoPlist.strings */,
 				9B99426A163EC009001CAECC /* main.m */,
 				9B99426C163EC009001CAECC /* Numbers-Prefix.pch */,
+				9B994266163EC009001CAECC /* Numbers-Info.plist */,
+				9B994274163EC009001CAECC /* Default-568h@2x.png */,
 				9B994270163EC009001CAECC /* Default.png */,
 				9B994272163EC009001CAECC /* Default@2x.png */,
-				9B994274163EC009001CAECC /* Default-568h@2x.png */,
+				503A2BC016453B0C00C987ED /* en.lproj */,
+				9B1090361641674E00F7AF0D /* images */,
+				9B109233164169D100F7AF0D /* sound */,
 			);
 			name = "Supporting Files";
+			path = Numbers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -990,13 +1004,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B994269163EC009001CAECC /* InfoPlist.strings in Resources */,
 				9B994271163EC009001CAECC /* Default.png in Resources */,
 				9B994273163EC009001CAECC /* Default@2x.png in Resources */,
 				9B994275163EC009001CAECC /* Default-568h@2x.png in Resources */,
-				9B99427B163EC009001CAECC /* ViewController.xib in Resources */,
-				9B994292163EC4FF001CAECC /* GameView.xib in Resources */,
-				9B108D6D16400C2500F7AF0D /* numbers_logo_png24.png in Resources */,
 				9B1091331641674E00F7AF0D /* numbers_button_off_b_01.png in Resources */,
 				9B1091341641674E00F7AF0D /* numbers_button_off_b_02.png in Resources */,
 				9B1091351641674E00F7AF0D /* numbers_button_off_b_03.png in Resources */,
@@ -1254,6 +1264,10 @@
 				9B10924216416A2200F7AF0D /* 02_seikai.mp3 in Resources */,
 				9B10924316416A2200F7AF0D /* 03_hazure.mp3 in Resources */,
 				9B10924416416A2200F7AF0D /* select08.mp3 in Resources */,
+				503A2BC916453B0C00C987ED /* CountDownViewController.xib in Resources */,
+				503A2BCA16453B0C00C987ED /* GameView.xib in Resources */,
+				503A2BCB16453B0C00C987ED /* InfoPlist.strings in Resources */,
+				503A2BCC16453B0C00C987ED /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1268,34 +1282,43 @@
 				9B99426F163EC009001CAECC /* AppDelegate.m in Sources */,
 				9B994278163EC009001CAECC /* ViewController.m in Sources */,
 				9B99428A163EC484001CAECC /* GameViewController.m in Sources */,
+				503A2BB816453A3400C987ED /* CountDownViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9B994267163EC009001CAECC /* InfoPlist.strings */ = {
+		503A2BC116453B0C00C987ED /* CountDownViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9B994268163EC009001CAECC /* en */,
+				503A2BC216453B0C00C987ED /* en */,
+			);
+			name = CountDownViewController.xib;
+			sourceTree = "<group>";
+		};
+		503A2BC316453B0C00C987ED /* GameView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				503A2BC416453B0C00C987ED /* en */,
+			);
+			name = GameView.xib;
+			sourceTree = "<group>";
+		};
+		503A2BC516453B0C00C987ED /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				503A2BC616453B0C00C987ED /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		9B994279163EC009001CAECC /* ViewController.xib */ = {
+		503A2BC716453B0C00C987ED /* ViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9B99427A163EC009001CAECC /* en */,
+				503A2BC816453B0C00C987ED /* en */,
 			);
 			name = ViewController.xib;
-			sourceTree = "<group>";
-		};
-		9B994290163EC4FF001CAECC /* GameView.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9B994291163EC4FF001CAECC /* en */,
-			);
-			name = GameView.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

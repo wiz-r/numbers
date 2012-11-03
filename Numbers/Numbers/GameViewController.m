@@ -47,48 +47,20 @@
 
 
 @interface GameViewController () <AVAudioSessionDelegate>
-@property (retain, nonatomic) IBOutlet UIView *countDownView;
-@property (retain, nonatomic) IBOutlet UILabel *countDownLabel;
-@property (retain, nonatomic) IBOutletCollection(UIButton) NSArray *numberButtons;
-@property (retain, nonatomic) IBOutlet UILabel *currentNumberLabel;
-@property (retain, nonatomic) IBOutlet UILabel *currentTimeLabel;
-@property (retain, nonatomic) IBOutlet UIView *containerView;
-
-@property (assign, nonatomic) int count;
+@property (retain, nonatomic) IBOutletCollection(UIButton) NSArray* numberButtons;
+@property (retain, nonatomic) IBOutlet UILabel* currentNumberLabel;
+@property (retain, nonatomic) IBOutlet UILabel* currentTimeLabel;
+@property (retain, nonatomic) IBOutlet UIView* containerView;
 @property (retain, nonatomic) NSDate* startTime;
 @property (retain, nonatomic) NSDate* currentTime;
-
 @property (retain, nonatomic) Numbers* numbers;
-
 @property (retain, nonatomic) AVAudioPlayer* player;
-
 @property (assign, nonatomic) BOOL finishedGame;
-
 - (IBAction)numberButtonTapped:(id)sender;
-
 - (void)finishGame;
-
 @end
 
 @implementation GameViewController
-
-- (void)countDown
-{
-  self.countDownLabel.text = [NSString stringWithFormat:@"%d", self.count];
-  
-  if (0 < self.count) {
-    [self performSelector:@selector(countDown) withObject:nil afterDelay:1.0];
-  } else {
-    [self.countDownView removeFromSuperview];
-    
-    // ゲーム開始タイマースタート
-    self.startTime = [NSDate date];
-    self.currentTime = [NSDate date];
-    [self countUpTimer];
-  }
-
-  self.count = self.count - 1;
-}
 
 - (void)countUpTimer
 {
@@ -116,11 +88,6 @@
   // update status
   self.finishedGame = NO;
   
-  // setup count down view
-  self.count = 3;
-  [self.view addSubview:self.countDownView];
-  [self countDown];
-  
   // setup game model
   self.numbers = [[[Numbers alloc] init] autorelease];
 
@@ -133,6 +100,11 @@
     UIImage* image = [UIImage imageNamed:imageName];
     [button setImage:image forState:UIControlStateNormal];
   }
+
+  // ゲーム開始タイマースタート
+  self.startTime = [NSDate date];
+  self.currentTime = [NSDate date];
+  [self countUpTimer];
 }
 
 - (void)viewDidLoad
@@ -151,9 +123,7 @@
 }
 
 - (void)dealloc {
-  [_countDownView release];
   [_numberButtons release];
-  [_countDownLabel release];
   [_currentNumberLabel release];
   [_currentTimeLabel release];
   [_containerView release];
