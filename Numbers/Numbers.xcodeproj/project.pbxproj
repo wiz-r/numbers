@@ -12,6 +12,7 @@
 		503A2BCA16453B0C00C987ED /* GameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 503A2BC316453B0C00C987ED /* GameView.xib */; };
 		503A2BCB16453B0C00C987ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 503A2BC516453B0C00C987ED /* InfoPlist.strings */; };
 		503A2BCC16453B0C00C987ED /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 503A2BC716453B0C00C987ED /* ViewController.xib */; };
+		503A2BCF164540C400C987ED /* Numbers.m in Sources */ = {isa = PBXBuildFile; fileRef = 503A2BCE164540C400C987ED /* Numbers.m */; };
 		650B0392164162B60015595F /* libFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 650B0391164162B60015595F /* libFlurry.a */; };
 		650B0397164164220015595F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 650B0396164164220015595F /* SystemConfiguration.framework */; };
 		9B1091331641674E00F7AF0D /* numbers_button_off_b_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B1090381641674E00F7AF0D /* numbers_button_off_b_01.png */; };
@@ -291,6 +292,8 @@
 		503A2BC416453B0C00C987ED /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = GameView.xib; sourceTree = "<group>"; };
 		503A2BC616453B0C00C987ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
 		503A2BC816453B0C00C987ED /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = ViewController.xib; sourceTree = "<group>"; };
+		503A2BCD164540C400C987ED /* Numbers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Numbers.h; sourceTree = "<group>"; };
+		503A2BCE164540C400C987ED /* Numbers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Numbers.m; sourceTree = "<group>"; };
 		650B0390164162B60015595F /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
 		650B0391164162B60015595F /* libFlurry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry.a; sourceTree = "<group>"; };
 		650B0394164164160015595F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -932,6 +935,8 @@
 				9B994289163EC484001CAECC /* GameViewController.m */,
 				9B994276163EC009001CAECC /* ViewController.h */,
 				9B994277163EC009001CAECC /* ViewController.m */,
+				503A2BCD164540C400C987ED /* Numbers.h */,
+				503A2BCE164540C400C987ED /* Numbers.m */,
 			);
 			path = Numbers;
 			sourceTree = "<group>";
@@ -1283,6 +1288,7 @@
 				9B994278163EC009001CAECC /* ViewController.m in Sources */,
 				9B99428A163EC484001CAECC /* GameViewController.m in Sources */,
 				503A2BB816453A3400C987ED /* CountDownViewController.m in Sources */,
+				503A2BCF164540C400C987ED /* Numbers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

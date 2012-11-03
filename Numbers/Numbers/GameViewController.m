@@ -8,42 +8,7 @@
 
 #import <AVFoundation/AVFoundation.h>
 #import "GameViewController.h"
-
-
-@interface Numbers : NSObject
-@property (retain, nonatomic) NSMutableArray* numbers;
-@property (assign, nonatomic) NSInteger targetNumber;
-@end
-
-@implementation Numbers
-
-- (id)init
-{
-  self = [super init];
-  if (self) {
-    self.numbers = [NSMutableArray array];
-    for (int i = 1; i <= 25; i++) {
-      [self.numbers addObject:[NSNumber numberWithInt:i]];
-    }
-    
-    srand(time(NULL));
-    
-    for (int i = 0; i < 25; i++) {
-      int change = i + (rand() % 25 - i);
-      
-      NSNumber* n = [self.numbers objectAtIndex:i];
-      [self.numbers replaceObjectAtIndex:i
-                              withObject:[self.numbers objectAtIndex:change]];
-      [self.numbers replaceObjectAtIndex:change
-                              withObject:n];
-    }
-    
-    self.targetNumber = 1;
-  }
-  return self;
-}
-@end
-
+#import "Numbers.h"
 
 
 @interface GameViewController () <AVAudioSessionDelegate>
