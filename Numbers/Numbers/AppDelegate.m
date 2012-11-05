@@ -7,9 +7,14 @@
 //
 
 #import "AppDelegate.h"
-
 #import "ViewController.h"
 #import "Flurry.h"
+#import "GreePlatform.h"
+#import "GreePlatformSettings.h"
+
+
+@interface AppDelegate () <GreePlatformDelegate>
+@end
 
 @implementation AppDelegate
 
@@ -25,9 +30,26 @@
   // Flurry
   [Flurry startSession:@"RY9PKZM4FRQM7K4HX7QH"];
   
+  [GreePlatform
+   printEncryptedStringWithConsumerKey:@"f78d7e7e17f3"
+   consumerSecret:@"884df28891ed8a3822da1bfc7ca48306"
+   scramble:@"ten1unko"];
+  
+  NSDictionary* settings = [NSDictionary dictionaryWithObjectsAndKeys:
+                            GreeDevelopmentModeProduction, GreeSettingDevelopmentMode,
+                            nil];
+  
+  [GreePlatform
+   initializeWithApplicationId:@"58352"
+   consumerKey:@"f78d7e7e17f3"
+   consumerSecret:@"884df28891ed8a3822da1bfc7ca48306"
+   settings:settings
+   delegate:self];
+  
+  [GreePlatform handleLaunchOptions:launchOptions application:application];
+  
   // App Initialization
   self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
-  
   // Override point for customization after application launch.
   self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil] autorelease];
   self.window.rootViewController = self.viewController;
@@ -60,7 +82,42 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
-  // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+  [GreePlatform shutdown];
+}
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+{
+  return [GreePlatform handleOpenURL:url application:application];
+}
+
+- (void)greePlatformWillShowModalView:(GreePlatform*)platform
+{
+  NSLog(@"greePlatformWillShowModalView");
+}
+
+- (void)greePlatformDidDismissModalView:(GreePlatform*)platform
+{
+  NSLog(@"greePlatformDidDismissModalView");
+}
+
+- (void)greePlatform:(GreePlatform*)platform didLoginUser:(GreeUser*)localUser
+{
+  NSLog(@"greePlatform:didLoginUser:%@", localUser);
+}
+
+- (void)greePlatform:(GreePlatform*)platform didLogoutUser:(GreeUser*)localUser
+{
+  NSLog(@"greePlatform:didLogoutUser:%@", localUser);
+}
+
+- (void)greePlatformParamsReceived:(NSDictionary*)params
+{
+  NSLog(@"greePlatformParamsReceived:%@", params);
+}
+
+- (void)greePlatform:(GreePlatform*)platform didUpdateLocalUser:(GreeUser*)localUser
+{
+  NSLog(@"greePlatform:didUpdateLocalUser:%@", localUser);
 }
 
 @end

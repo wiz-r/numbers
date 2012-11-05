@@ -283,6 +283,21 @@
 		9B994275163EC009001CAECC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B994274163EC009001CAECC /* Default-568h@2x.png */; };
 		9B994278163EC009001CAECC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B994277163EC009001CAECC /* ViewController.m */; };
 		9B99428A163EC484001CAECC /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B994289163EC484001CAECC /* GameViewController.m */; };
+		9BA8A80B16480668009BF13F /* libGreePlatform.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA8A80516480668009BF13F /* libGreePlatform.a */; };
+		9BA8A80C16480668009BF13F /* libGreeWallet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA8A80616480668009BF13F /* libGreeWallet.a */; };
+		9BA8A80D16480668009BF13F /* GreePlatformCoreResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9BA8A80816480668009BF13F /* GreePlatformCoreResources.bundle */; };
+		9BA8A80E16480668009BF13F /* GreePlatformLandscapeResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9BA8A80916480668009BF13F /* GreePlatformLandscapeResources.bundle */; };
+		9BA8A80F16480668009BF13F /* GreePlatformPortraitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9BA8A80A16480668009BF13F /* GreePlatformPortraitResources.bundle */; };
+		9BA8A812164806A0009BF13F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA8A811164806A0009BF13F /* MessageUI.framework */; };
+		9BA8A814164806A8009BF13F /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA8A813164806A8009BF13F /* GameKit.framework */; };
+		9BA8A816164806D8009BF13F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA8A815164806D8009BF13F /* StoreKit.framework */; };
+		9BA8A818164806E5009BF13F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA8A817164806E5009BF13F /* QuartzCore.framework */; };
+		9BA8A81A164806EE009BF13F /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA8A819164806EE009BF13F /* AddressBook.framework */; };
+		9BA8A81C164806F6009BF13F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA8A81B164806F6009BF13F /* Security.framework */; };
+		9BA8A81E16480707009BF13F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA8A81D16480707009BF13F /* libsqlite3.dylib */; };
+		9BA8A82016480710009BF13F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA8A81F16480710009BF13F /* CoreLocation.framework */; };
+		9BA8A82216480727009BF13F /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA8A82116480727009BF13F /* ImageIO.framework */; };
+		9BA8A8241648072E009BF13F /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA8A8231648072E009BF13F /* CoreTelephony.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -572,6 +587,61 @@
 		9B994277163EC009001CAECC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9B994288163EC484001CAECC /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		9B994289163EC484001CAECC /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		9BA8A7DD16480668009BF13F /* GreeAchievement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreeAchievement.h; sourceTree = "<group>"; };
+		9BA8A7DE16480668009BF13F /* GreeAddressBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreeAddressBook.h; sourceTree = "<group>"; };
+		9BA8A7DF16480668009BF13F /* GreeAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreeAPI.h; sourceTree = "<group>"; };
+		9BA8A7E016480668009BF13F /* GreeAvatarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreeAvatarView.h; sourceTree = "<group>"; };
+		9BA8A7E116480668009BF13F /* GreeBadgeValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreeBadgeValues.h; sourceTree = "<group>"; };
+		9BA8A7E216480668009BF13F /* GreeDashboardViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreeDashboardViewControllerDelegate.h; sourceTree = "<group>"; };
+		9BA8A7E316480668009BF13F /* GreeDashboardViewControllerLaunchMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreeDashboardViewControllerLaunchMode.h; sourceTree = "<group>"; };
+		9BA8A7E416480668009BF13F /* GreeDeprecation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreeDeprecation.h; sourceTree = "<group>"; };
+		9BA8A7E516480668009BF13F /* GreeEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreeEnumerator.h; sourceTree = "<group>"; };
+		9BA8A7E616480668009BF13F /* GreeError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreeError.h; sourceTree = "<group>"; };
+		9BA8A7E716480668009BF13F /* GreeExternalSocialGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreeExternalSocialGraph.h; sourceTree = "<group>"; };
+		9BA8A7E816480668009BF13F /* GreeFriendCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreeFriendCodes.h; sourceTree = "<group>"; };
+		9BA8A7E916480668009BF13F /* GreeIncentive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreeIncentive.h; sourceTree = "<group>"; };
+		9BA8A7EA16480668009BF13F /* GreeLeaderboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreeLeaderboard.h; sourceTree = "<group>"; };
+		9BA8A7EB16480668009BF13F /* GreeLocalNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreeLocalNotification.h; sourceTree = "<group>"; };
+		9BA8A7EC16480668009BF13F /* GreeLoggerExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreeLoggerExceptionHandler.h; sourceTree = "<group>"; };
+		9BA8A7ED16480668009BF13F /* GreeModeratedText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreeModeratedText.h; sourceTree = "<group>"; };
+		9BA8A7EE16480668009BF13F /* GreeMyApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreeMyApplication.h; sourceTree = "<group>"; };
+		9BA8A7EF16480668009BF13F /* GreeNetworkReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreeNetworkReachability.h; sourceTree = "<group>"; };
+		9BA8A7F016480668009BF13F /* GreeNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreeNotification.h; sourceTree = "<group>"; };
+		9BA8A7F116480668009BF13F /* GreeNotificationBoardViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreeNotificationBoardViewControllerDelegate.h; sourceTree = "<group>"; };
+		9BA8A7F216480668009BF13F /* GreeNotificationQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreeNotificationQueue.h; sourceTree = "<group>"; };
+		9BA8A7F316480668009BF13F /* GreeNotificationTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreeNotificationTypes.h; sourceTree = "<group>"; };
+		9BA8A7F416480668009BF13F /* GreeNSNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreeNSNotification.h; sourceTree = "<group>"; };
+		9BA8A7F516480668009BF13F /* GreePlatform+GreeMiddlewareAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GreePlatform+GreeMiddlewareAdditions.h"; sourceTree = "<group>"; };
+		9BA8A7F616480668009BF13F /* GreePlatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreePlatform.h; sourceTree = "<group>"; };
+		9BA8A7F716480668009BF13F /* GreePlatformComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreePlatformComponent.h; sourceTree = "<group>"; };
+		9BA8A7F816480668009BF13F /* GreePlatformSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreePlatformSettings.h; sourceTree = "<group>"; };
+		9BA8A7F916480668009BF13F /* GreePopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreePopup.h; sourceTree = "<group>"; };
+		9BA8A7FA16480668009BF13F /* GreeScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreeScore.h; sourceTree = "<group>"; };
+		9BA8A7FB16480668009BF13F /* GreeSerializable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreeSerializable.h; sourceTree = "<group>"; };
+		9BA8A7FC16480668009BF13F /* GreeSocialGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreeSocialGraph.h; sourceTree = "<group>"; };
+		9BA8A7FD16480668009BF13F /* GreeUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreeUser.h; sourceTree = "<group>"; };
+		9BA8A7FE16480668009BF13F /* GreeViolationReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreeViolationReport.h; sourceTree = "<group>"; };
+		9BA8A7FF16480668009BF13F /* GreeWallet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreeWallet.h; sourceTree = "<group>"; };
+		9BA8A80016480668009BF13F /* GreeWalletPaymentItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreeWalletPaymentItem.h; sourceTree = "<group>"; };
+		9BA8A80116480668009BF13F /* GreeWalletProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreeWalletProduct.h; sourceTree = "<group>"; };
+		9BA8A80216480668009BF13F /* GreeWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreeWidget.h; sourceTree = "<group>"; };
+		9BA8A80316480668009BF13F /* GreeWriteCacheable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreeWriteCacheable.h; sourceTree = "<group>"; };
+		9BA8A80416480668009BF13F /* UIViewController+GreePlatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+GreePlatform.h"; sourceTree = "<group>"; };
+		9BA8A80516480668009BF13F /* libGreePlatform.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGreePlatform.a; sourceTree = "<group>"; };
+		9BA8A80616480668009BF13F /* libGreeWallet.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGreeWallet.a; sourceTree = "<group>"; };
+		9BA8A80816480668009BF13F /* GreePlatformCoreResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GreePlatformCoreResources.bundle; sourceTree = "<group>"; };
+		9BA8A80916480668009BF13F /* GreePlatformLandscapeResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GreePlatformLandscapeResources.bundle; sourceTree = "<group>"; };
+		9BA8A80A16480668009BF13F /* GreePlatformPortraitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GreePlatformPortraitResources.bundle; sourceTree = "<group>"; };
+		9BA8A811164806A0009BF13F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		9BA8A813164806A8009BF13F /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		9BA8A815164806D8009BF13F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		9BA8A817164806E5009BF13F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9BA8A819164806EE009BF13F /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		9BA8A81B164806F6009BF13F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		9BA8A81D16480707009BF13F /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		9BA8A81F16480710009BF13F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		9BA8A82116480727009BF13F /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		9BA8A8231648072E009BF13F /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -579,12 +649,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BA8A8241648072E009BF13F /* CoreTelephony.framework in Frameworks */,
+				9BA8A82216480727009BF13F /* ImageIO.framework in Frameworks */,
+				9BA8A82016480710009BF13F /* CoreLocation.framework in Frameworks */,
+				9BA8A81E16480707009BF13F /* libsqlite3.dylib in Frameworks */,
+				9BA8A81C164806F6009BF13F /* Security.framework in Frameworks */,
+				9BA8A81A164806EE009BF13F /* AddressBook.framework in Frameworks */,
+				9BA8A818164806E5009BF13F /* QuartzCore.framework in Frameworks */,
+				9BA8A816164806D8009BF13F /* StoreKit.framework in Frameworks */,
+				9BA8A814164806A8009BF13F /* GameKit.framework in Frameworks */,
+				9BA8A812164806A0009BF13F /* MessageUI.framework in Frameworks */,
 				9B10924716416A8C00F7AF0D /* AVFoundation.framework in Frameworks */,
 				650B0397164164220015595F /* SystemConfiguration.framework in Frameworks */,
 				9B99425F163EC009001CAECC /* UIKit.framework in Frameworks */,
 				9B994261163EC009001CAECC /* Foundation.framework in Frameworks */,
 				9B994263163EC009001CAECC /* CoreGraphics.framework in Frameworks */,
 				650B0392164162B60015595F /* libFlurry.a in Frameworks */,
+				9BA8A80B16480668009BF13F /* libGreePlatform.a in Frameworks */,
+				9BA8A80C16480668009BF13F /* libGreeWallet.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -914,12 +996,23 @@
 		9B99425D163EC009001CAECC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9BA8A819164806EE009BF13F /* AddressBook.framework */,
 				9B10924616416A8C00F7AF0D /* AVFoundation.framework */,
-				650B0396164164220015595F /* SystemConfiguration.framework */,
 				650B0394164164160015595F /* CFNetwork.framework */,
-				9B99425E163EC009001CAECC /* UIKit.framework */,
-				9B994260163EC009001CAECC /* Foundation.framework */,
 				9B994262163EC009001CAECC /* CoreGraphics.framework */,
+				9BA8A81F16480710009BF13F /* CoreLocation.framework */,
+				9BA8A8231648072E009BF13F /* CoreTelephony.framework */,
+				9B994260163EC009001CAECC /* Foundation.framework */,
+				9BA8A813164806A8009BF13F /* GameKit.framework */,
+				9BA8A7DB16480668009BF13F /* gree */,
+				9BA8A82116480727009BF13F /* ImageIO.framework */,
+				9BA8A81D16480707009BF13F /* libsqlite3.dylib */,
+				9BA8A811164806A0009BF13F /* MessageUI.framework */,
+				9BA8A817164806E5009BF13F /* QuartzCore.framework */,
+				9BA8A81B164806F6009BF13F /* Security.framework */,
+				9BA8A815164806D8009BF13F /* StoreKit.framework */,
+				650B0396164164220015595F /* SystemConfiguration.framework */,
+				9B99425E163EC009001CAECC /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -956,6 +1049,75 @@
 			);
 			name = "Supporting Files";
 			path = Numbers;
+			sourceTree = "<group>";
+		};
+		9BA8A7DB16480668009BF13F /* gree */ = {
+			isa = PBXGroup;
+			children = (
+				9BA8A7DC16480668009BF13F /* include */,
+				9BA8A80516480668009BF13F /* libGreePlatform.a */,
+				9BA8A80616480668009BF13F /* libGreeWallet.a */,
+				9BA8A80716480668009BF13F /* resources */,
+			);
+			name = gree;
+			path = ../gree;
+			sourceTree = "<group>";
+		};
+		9BA8A7DC16480668009BF13F /* include */ = {
+			isa = PBXGroup;
+			children = (
+				9BA8A7DD16480668009BF13F /* GreeAchievement.h */,
+				9BA8A7DE16480668009BF13F /* GreeAddressBook.h */,
+				9BA8A7DF16480668009BF13F /* GreeAPI.h */,
+				9BA8A7E016480668009BF13F /* GreeAvatarView.h */,
+				9BA8A7E116480668009BF13F /* GreeBadgeValues.h */,
+				9BA8A7E216480668009BF13F /* GreeDashboardViewControllerDelegate.h */,
+				9BA8A7E316480668009BF13F /* GreeDashboardViewControllerLaunchMode.h */,
+				9BA8A7E416480668009BF13F /* GreeDeprecation.h */,
+				9BA8A7E516480668009BF13F /* GreeEnumerator.h */,
+				9BA8A7E616480668009BF13F /* GreeError.h */,
+				9BA8A7E716480668009BF13F /* GreeExternalSocialGraph.h */,
+				9BA8A7E816480668009BF13F /* GreeFriendCodes.h */,
+				9BA8A7E916480668009BF13F /* GreeIncentive.h */,
+				9BA8A7EA16480668009BF13F /* GreeLeaderboard.h */,
+				9BA8A7EB16480668009BF13F /* GreeLocalNotification.h */,
+				9BA8A7EC16480668009BF13F /* GreeLoggerExceptionHandler.h */,
+				9BA8A7ED16480668009BF13F /* GreeModeratedText.h */,
+				9BA8A7EE16480668009BF13F /* GreeMyApplication.h */,
+				9BA8A7EF16480668009BF13F /* GreeNetworkReachability.h */,
+				9BA8A7F016480668009BF13F /* GreeNotification.h */,
+				9BA8A7F116480668009BF13F /* GreeNotificationBoardViewControllerDelegate.h */,
+				9BA8A7F216480668009BF13F /* GreeNotificationQueue.h */,
+				9BA8A7F316480668009BF13F /* GreeNotificationTypes.h */,
+				9BA8A7F416480668009BF13F /* GreeNSNotification.h */,
+				9BA8A7F516480668009BF13F /* GreePlatform+GreeMiddlewareAdditions.h */,
+				9BA8A7F616480668009BF13F /* GreePlatform.h */,
+				9BA8A7F716480668009BF13F /* GreePlatformComponent.h */,
+				9BA8A7F816480668009BF13F /* GreePlatformSettings.h */,
+				9BA8A7F916480668009BF13F /* GreePopup.h */,
+				9BA8A7FA16480668009BF13F /* GreeScore.h */,
+				9BA8A7FB16480668009BF13F /* GreeSerializable.h */,
+				9BA8A7FC16480668009BF13F /* GreeSocialGraph.h */,
+				9BA8A7FD16480668009BF13F /* GreeUser.h */,
+				9BA8A7FE16480668009BF13F /* GreeViolationReport.h */,
+				9BA8A7FF16480668009BF13F /* GreeWallet.h */,
+				9BA8A80016480668009BF13F /* GreeWalletPaymentItem.h */,
+				9BA8A80116480668009BF13F /* GreeWalletProduct.h */,
+				9BA8A80216480668009BF13F /* GreeWidget.h */,
+				9BA8A80316480668009BF13F /* GreeWriteCacheable.h */,
+				9BA8A80416480668009BF13F /* UIViewController+GreePlatform.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		9BA8A80716480668009BF13F /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				9BA8A80816480668009BF13F /* GreePlatformCoreResources.bundle */,
+				9BA8A80916480668009BF13F /* GreePlatformLandscapeResources.bundle */,
+				9BA8A80A16480668009BF13F /* GreePlatformPortraitResources.bundle */,
+			);
+			path = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1273,6 +1435,9 @@
 				503A2BCA16453B0C00C987ED /* GameView.xib in Resources */,
 				503A2BCB16453B0C00C987ED /* InfoPlist.strings in Resources */,
 				503A2BCC16453B0C00C987ED /* ViewController.xib in Resources */,
+				9BA8A80D16480668009BF13F /* GreePlatformCoreResources.bundle in Resources */,
+				9BA8A80E16480668009BF13F /* GreePlatformLandscapeResources.bundle in Resources */,
+				9BA8A80F16480668009BF13F /* GreePlatformPortraitResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1387,6 +1552,11 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Flurry\"",
+					"\"$(SRCROOT)/../gree\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -1402,6 +1572,11 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Flurry\"",
+					"\"$(SRCROOT)/../gree\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
