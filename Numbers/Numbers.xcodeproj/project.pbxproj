@@ -642,6 +642,7 @@
 		9BA8A81F16480710009BF13F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		9BA8A82116480727009BF13F /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		9BA8A8231648072E009BF13F /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		9BA8A879164959FC009BF13F /* GreePlatform+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GreePlatform+Internal.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1091,6 +1092,7 @@
 				9BA8A7F316480668009BF13F /* GreeNotificationTypes.h */,
 				9BA8A7F416480668009BF13F /* GreeNSNotification.h */,
 				9BA8A7F516480668009BF13F /* GreePlatform+GreeMiddlewareAdditions.h */,
+				9BA8A879164959FC009BF13F /* GreePlatform+Internal.h */,
 				9BA8A7F616480668009BF13F /* GreePlatform.h */,
 				9BA8A7F716480668009BF13F /* GreePlatformComponent.h */,
 				9BA8A7F816480668009BF13F /* GreePlatformSettings.h */,

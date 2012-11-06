@@ -8,6 +8,8 @@
 
 #import "CountDownViewController.h"
 #import "ViewController.h"
+#import "GreePlatform.h"
+#import "GreeUser.h"
 
 @interface ViewController ()
 - (IBAction)playButtonTouched:(id)sender;
@@ -25,6 +27,15 @@
 
 - (IBAction)leaderboardButtonTouched:(id)sender
 {
+  __block void(^onLogin)(GreeUser*, NSError*) = ^(GreeUser* localUser, NSError* error) {
+    if (error) {
+      NSLog(@"Something when wrong: %@", error);
+      return;
+    }
+    NSLog(@"User %@ logged in!", localUser.userId);
+  };
+  
+  [GreePlatform authorizeNonInteractivelyWithBlock:onLogin forGrade:GreeUserGradeLite];
 }
 
 - (IBAction)optionButtonTouched:(id)sender

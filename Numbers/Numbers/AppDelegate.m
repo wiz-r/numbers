@@ -10,6 +10,7 @@
 #import "ViewController.h"
 #import "Flurry.h"
 #import "GreePlatform.h"
+#import "GreePlatform+Internal.h"
 #import "GreePlatformSettings.h"
 
 
@@ -37,6 +38,7 @@
   
   NSDictionary* settings = [NSDictionary dictionaryWithObjectsAndKeys:
                             GreeDevelopmentModeProduction, GreeSettingDevelopmentMode,
+                            [NSNumber numberWithBool:YES], GreeSettingEnableGrade0,
                             nil];
   
   [GreePlatform
