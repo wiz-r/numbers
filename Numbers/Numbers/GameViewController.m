@@ -10,6 +10,11 @@
 #import "GameViewController.h"
 #import "Numbers.h"
 
+#import "GreeScore.h"
+
+
+static NSString* const myLeaderboardId = @"10001557";
+
 
 @interface GameViewController () <AVAudioSessionDelegate>
 @property (retain, nonatomic) IBOutletCollection(UIButton) NSArray* numberButtons;
@@ -123,6 +128,13 @@
      cancelButtonTitle:nil
      otherButtonTitles:@"OK",
      nil] autorelease] show];
+  
+  int64_t timeval = (int64_t)(self.numbers.elapsedTime * 1000);
+  __block GreeScore* score = [[GreeScore alloc] initWithLeaderboard:myLeaderboardId score:timeval];
+  [score submitWithBlock:^{
+    NSLog(@"score submitted:%@", score);
+    [score release];
+  }];
 }
 
 - (void)updateLabelForNextNumber

@@ -7,9 +7,11 @@
 //
 
 #import "CountDownViewController.h"
-#import "ViewController.h"
+#import "GreeDashboardViewControllerLaunchMode.h"
 #import "GreePlatform.h"
 #import "GreeUser.h"
+#import "UIViewController+GreePlatform.h"
+#import "ViewController.h"
 
 @interface ViewController ()
 - (IBAction)playButtonTouched:(id)sender;
@@ -27,15 +29,22 @@
 
 - (IBAction)leaderboardButtonTouched:(id)sender
 {
-  __block void(^onLogin)(GreeUser*, NSError*) = ^(GreeUser* localUser, NSError* error) {
-    if (error) {
-      NSLog(@"Something when wrong: %@", error);
-      return;
-    }
-    NSLog(@"User %@ logged in!", localUser.userId);
-  };
-  
-  [GreePlatform authorizeNonInteractivelyWithBlock:onLogin forGrade:GreeUserGradeLite];
+  if ([GreePlatform isAuthorized]) {
+    NSDictionary* parameters = @{
+      GreeDashboardMode: GreeDashboardModeRankingList,
+    };
+    [self presentGreeDashboardWithParameters:parameters animated:YES];
+  } else {
+    __block void(^onLogin)(GreeUser*, NSError*) = ^(GreeUser* localUser, NSError* error) {
+      if (error) {
+        NSLog(@"Something when wrong: %@", error);
+        return;
+      }
+      NSLog(@"User %@ logged in!", localUser.userId);
+    };
+    
+    [GreePlatform authorizeNonInteractivelyWithBlock:onLogin forGrade:GreeUserGradeLite];
+  }
 }
 
 - (IBAction)optionButtonTouched:(id)sender
