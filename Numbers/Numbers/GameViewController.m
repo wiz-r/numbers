@@ -13,7 +13,7 @@
 #import "GreeScore.h"
 
 
-static NSString* const myLeaderboardId = @"10001557";
+static NSString* const myLeaderboardId = @"10001595";
 
 
 @interface GameViewController () <AVAudioSessionDelegate>
